@@ -11,10 +11,13 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <h1>React router Task</h1>
+        <nav>
         <NavLink to="/">Home</NavLink>
         <NavLink to="/Contact">Contact</NavLink>
         <NavLink to="/About">About</NavLink>
         <NavLink to="/Service">Service</NavLink>
+        </nav>
+        
         <Routes>
         <Route path='/' element={<Home />}/>
         <Route path='/Contact' element={<Contact />}/>
